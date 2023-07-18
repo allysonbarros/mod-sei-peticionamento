@@ -27,7 +27,7 @@ try {
     switch ($_GET['acao']) {
 
         case 'md_pet_vinc_responsavel_cadastrar':
-            $strTitulo = 'Alterar o Responsável Legal';
+            $strTitulo = 'Alterar o Responsï¿½vel Legal';
             $janelaSelecaoPorNome = SessaoSEIExterna::getInstance()->getAtributo('janelaSelecaoPorNome');
             $strPrimeiroItemValor = 'null';
             $strPrimeiroItemDescricao = '&nbsp;';
@@ -112,7 +112,7 @@ try {
 
 
                     $consulta = $objMdPetSoapClienteRN->consultarWsdl($strMetodoWebservice, $parametro);
-                    $cpfResponsavelLegalReceita = $consulta['PessoaJuridica']['responsavel']['cpf'];
+                    $cpfResponsavelLegalReceita = $consulta['CNPJPerfil']['responsavel']['cpf'];
 
                     $objMdPetVinculoUsuExtRN = new MdPetVinculoUsuExtRN();
 
@@ -152,7 +152,7 @@ try {
             break;
 
         default:
-            throw new InfraException("Ação '" . $_GET['acao'] . "' não reconhecida.");
+            throw new InfraException("Aï¿½ï¿½o '" . $_GET['acao'] . "' nï¿½o reconhecida.");
     }
 
 } catch (Exception $e) {
@@ -189,7 +189,7 @@ $strLinkBaseFormEdicao = 'controlador.php?edicaoExibir=true&acao=' . $_GET['acao
 $strLinkEdicaHash = PaginaSEI::getInstance()->formatarXHTML(SessaoSEI::getInstance()->assinarLink($strLinkBaseFormEdicao));
 ?>
 
-    <!-- Formulario usado para viabilizar fluxo de edição de contato -->
+    <!-- Formulario usado para viabilizar fluxo de ediï¿½ï¿½o de contato -->
 
     <form id="frmEdicaoAuxiliar"
           name="frmEdicaoAuxiliar"
@@ -202,11 +202,11 @@ $strLinkEdicaHash = PaginaSEI::getInstance()->formatarXHTML(SessaoSEI::getInstan
         ?>
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
-                ATENÇÃO
-                <p id="txtInformativo1">Os dados aqui dispostos dizem respeito ao Responsável Legal pela Pessoa Jurídica
+                ATENï¿½ï¿½O
+                <p id="txtInformativo1">Os dados aqui dispostos dizem respeito ao Responsï¿½vel Legal pela Pessoa Jurï¿½dica
                     indicada, conforme constante no SEI.<br/>
-                    Informe abaixo o CPF do Usuário Externo que deseja indicar como novo Responsável
-                    Legal por esta Pessoa Jurídica.</p>
+                    Informe abaixo o CPF do Usuï¿½rio Externo que deseja indicar como novo Responsï¿½vel
+                    Legal por esta Pessoa Jurï¿½dica.</p>
 
             </div>
         </div>
@@ -221,7 +221,7 @@ $strLinkEdicaHash = PaginaSEI::getInstance()->formatarXHTML(SessaoSEI::getInstan
                        tabindex="<?= PaginaSEI::getInstance()->getProxTabDados() ?>"/>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5">
-                <label id="lblRazaoSocial" class="infraLabelObrigatorio">Razão Social:</label>
+                <label id="lblRazaoSocial" class="infraLabelObrigatorio">Razï¿½o Social:</label>
                 <input type="text" id="txtRazaoSocial" name="txtRazaoSocial"
                        class="infraText form-control"
                        disabled="disabled"
@@ -232,7 +232,7 @@ $strLinkEdicaHash = PaginaSEI::getInstance()->formatarXHTML(SessaoSEI::getInstan
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                <label id="lblCnpj" class="infraLabelObrigatorio">CPF do Responsável Legal:</label>
+                <label id="lblCnpj" class="infraLabelObrigatorio">CPF do Responsï¿½vel Legal:</label>
                 <input type="text" id="txtCpf" name="txtCpf"
                        class="infraText form-control"
                        disabled="disabled"
@@ -241,7 +241,7 @@ $strLinkEdicaHash = PaginaSEI::getInstance()->formatarXHTML(SessaoSEI::getInstan
                        tabindex="<?= PaginaSEI::getInstance()->getProxTabDados() ?>"/>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5">
-                <label id="txtRazaoSocial" class="infraLabelObrigatorio">Nome do Responsável Legal:</label>
+                <label id="txtRazaoSocial" class="infraLabelObrigatorio">Nome do Responsï¿½vel Legal:</label>
                 <input type="text" id="txtNome" name="txtNome"
                        disabled="disabled"
                        class="infraText form-control"
@@ -252,7 +252,7 @@ $strLinkEdicaHash = PaginaSEI::getInstance()->formatarXHTML(SessaoSEI::getInstan
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                <label class="infraLabelObrigatorio">CPF do Usuário Externo:</label>
+                <label class="infraLabelObrigatorio">CPF do Usuï¿½rio Externo:</label>
                 <div class="input-group mb-3 zerarFormatacao">
                     <input type="text" id="txtCpfNovo" name="txtCpfNovo" style="width: 60%"
                            class="infraText form-control"
@@ -265,7 +265,7 @@ $strLinkEdicaHash = PaginaSEI::getInstance()->formatarXHTML(SessaoSEI::getInstan
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5">
-                <label class="infraLabelObrigatorio">Nome do Usuário Externo:</label>
+                <label class="infraLabelObrigatorio">Nome do Usuï¿½rio Externo:</label>
                 <input type="text" id="txtNomeNovo" name="txtNomeNovo"
                        class="infraText form-control"
                        readonly="readonly"
@@ -275,7 +275,7 @@ $strLinkEdicaHash = PaginaSEI::getInstance()->formatarXHTML(SessaoSEI::getInstan
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                <label class="infraLabelObrigatorio">Número SEI da Justificativa: </label>
+                <label class="infraLabelObrigatorio">Nï¿½mero SEI da Justificativa: </label>
                 <div class="input-group mb-3 zerarFormatacao">
                     <input type="text" id="txtNumeroSei" name="txtNumeroSei"
                            class="infraText form-control"
