@@ -159,7 +159,7 @@ class MdPetIntegracaoRN extends InfraRN
 
             if ($siglaContato) {
                 $parametro = [
-                    $strMetodoWebservice => [
+                    [
                         'cnpj' => $cnpj,
                         'cpfUsuario' => $cpfUsuarioLogado,
                         $chaveMes => $mes,
@@ -168,7 +168,7 @@ class MdPetIntegracaoRN extends InfraRN
                 ];
             } else {
                 $parametro = [
-                    $strMetodoWebservice => [
+                    [
                         'cnpj' => $cnpj,
                         'cpfUsuario' => $cpfUsuarioLogado,
                         $chaveMes => $mes
@@ -179,7 +179,7 @@ class MdPetIntegracaoRN extends InfraRN
         } else {
 
             $parametro = [
-                $strMetodoWebservice => [
+                [
                     'cnpj' => $cnpj,
                     'cpfUsuario' => $cpfUsuarioLogado
                 ]
