@@ -112,7 +112,7 @@ try {
 
 
                     $consulta = $objMdPetSoapClienteRN->consultarWsdl($strMetodoWebservice, $parametro);
-                    $cpfResponsavelLegalReceita = $consulta['CNPJPerfil']['responsavel']['cpf'];
+                    $cpfResponsavelLegalReceita = $consulta['CNPJPerfil']['CPFResponsavel'];
 
                     $objMdPetVinculoUsuExtRN = new MdPetVinculoUsuExtRN();
 
