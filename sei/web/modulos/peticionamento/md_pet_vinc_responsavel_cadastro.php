@@ -27,7 +27,7 @@ try {
     switch ($_GET['acao']) {
 
         case 'md_pet_vinc_responsavel_cadastrar':
-            $strTitulo = 'Alterar o Responsável Legal';
+            $strTitulo = 'Alterar o Respons�vel Legal';
             $janelaSelecaoPorNome = SessaoSEIExterna::getInstance()->getAtributo('janelaSelecaoPorNome');
             $strPrimeiroItemValor = 'null';
             $strPrimeiroItemDescricao = '&nbsp;';
@@ -203,9 +203,9 @@ $strLinkEdicaHash = PaginaSEI::getInstance()->formatarXHTML(SessaoSEI::getInstan
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-10 col-xl-10">
                 ATENÇÃO
-                <p id="txtInformativo1">Os dados aqui dispostos dizem respeito ao Responsável Legal pela Pessoa Jurídica
+                <p id="txtInformativo1">Os dados aqui dispostos dizem respeito ao Respons�vel Legal pela Pessoa Jurídica
                     indicada, conforme constante no SEI.<br/>
-                    Informe abaixo o CPF do Usuário Externo que deseja indicar como novo Responsável
+                    Informe abaixo o CPF do Usuário Externo que deseja indicar como novo Respons�vel
                     Legal por esta Pessoa Jurídica.</p>
 
             </div>
@@ -232,7 +232,7 @@ $strLinkEdicaHash = PaginaSEI::getInstance()->formatarXHTML(SessaoSEI::getInstan
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-6 col-xl-4">
-                <label id="lblCnpj" class="infraLabelObrigatorio">CPF do Responsável Legal:</label>
+                <label id="lblCnpj" class="infraLabelObrigatorio">CPF do Respons�vel Legal:</label>
                 <input type="text" id="txtCpf" name="txtCpf"
                        class="infraText form-control"
                        disabled="disabled"
@@ -241,7 +241,7 @@ $strLinkEdicaHash = PaginaSEI::getInstance()->formatarXHTML(SessaoSEI::getInstan
                        tabindex="<?= PaginaSEI::getInstance()->getProxTabDados() ?>"/>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-5 col-xl-5">
-                <label id="txtRazaoSocial" class="infraLabelObrigatorio">Nome do Responsável Legal:</label>
+                <label id="txtRazaoSocial" class="infraLabelObrigatorio">Nome do Respons�vel Legal:</label>
                 <input type="text" id="txtNome" name="txtNome"
                        disabled="disabled"
                        class="infraText form-control"
