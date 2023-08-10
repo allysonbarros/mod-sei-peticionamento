@@ -172,7 +172,7 @@
 | Cpf | CPF do Representante. |
 | Email | Endereço de e-mail utilizado pelo Usuário Externo para acesso à tela de Acesso Externo do SEI, indicado quando efetivou seu cadastro no SEI como Usuário Externo. |
 | StaSituacao | Situação do Representante (A=Ativo, S=Suspenso, R=Revogado, C=Renunciado, V=Vencido, T=Substituído, I=Inativo). |
-| StaTipoRepresentacao | Tipo da Representação (L=Respons�vel Legal, E=Procurador Especial, C=Procurador, S=Procurador Simples, U=Autorrepresentação) |
+| StaTipoRepresentacao | Tipo da Representação (L=Responsável Legal, E=Procurador Especial, C=Procurador, S=Procurador Simples, U=Autorrepresentação) |
 | ProcessosAbrangencia | Estrutura de Dados [ProcessosAbrangencia](#estrutura-de-dados-processosabrangencia). |
 | TipoPoderesLegais | Uma lista de ocorrências da Estrutura de Dados [PoderesLegais](#estrutura-de-dados-podereslegais). |
 
@@ -202,7 +202,7 @@
 | NomeRepresentado | Nome do Representado caso o Tipo de Vínculo seja de Pessoa Física. |
 | EmailRepresentante | Endereço de e-mail utilizado pelo Usuário Externo do Representante para acesso à tela de Acesso Externo do SEI, indicado quando efetivou seu cadastro no SEI como Usuário Externo. |
 | StaSituacao | Situação da Representação (A=Ativo, S=Suspenso, R=Revogada, C=Renunciada, V=Vencida, T=Substituída, I=Inativo). |
-| StaTipoRepresentacao | Tipo da Representação (L=Respons�vel Legal, E=Procurador Especial, C=Procurador, S=Procurador Simples, U=Autorrepresentação) |
+| StaTipoRepresentacao | Tipo da Representação (L=Responsável Legal, E=Procurador Especial, C=Procurador, S=Procurador Simples, U=Autorrepresentação) |
 | DataLimite | Data limite da vigência da Representação. |
 | ProcessosAbrangencia | Estrutura de Dados [ProcessosAbrangencia](#estrutura-de-dados-processosabrangencia). |
 | TipoPoderesLegais | Uma lista de ocorrências da Estrutura de Dados [PoderesLegais](#estrutura-de-dados-podereslegais). |
@@ -245,7 +245,7 @@
 | Dado | Descrição |
 | ---- | ---- |
 | Nome | Nome do Tipo de Representação. |
-| StrTipoRepresentacao | Identificador do Tipo de Representação (L=Respons�vel Legal, E=Procurador Especial, S=Procurador Simples, U=Autorrepresentação). |
+| StrTipoRepresentacao | Identificador do Tipo de Representação (L=Responsável Legal, E=Procurador Especial, S=Procurador Simples, U=Autorrepresentação). |
 
 ## 9. Listar Usuários Externos
 
